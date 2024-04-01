@@ -4,11 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>criando a primeira tabela</title>
+    <style>
+        table{
+            width: 400px;
+            border-collapse: collapse;
+        }
+        td{
+            border: 1px solid black;
+            padding: 5px;
+            
+        }
+        tr.color{
+            background-color: aqua;
+        }
+
+        td#cubo{
+            background-color: chocolate;
+
+        }
+    </style>
 </head>
 <body>
     <h1>minha primeira tabela</h1>
     <table>
-        
+        <tr>
+            <td id="cubo">a1</td>
+            <td>b1</td>
+            <td>c1</td>
+        </tr>
+        <tr>
+            <td>a2</td>
+            <td>b2</td>
+            <td>c2</td>
+        </tr>
+        <tr class="color">
+            <td>a3</td>
+            <td>b3</td>
+            <td>c3</td>
+        </tr>
+        <tr>
+            <td>a4</td>
+            <td>b4</td>
+            <td>c4</td>
+        </tr>
     </table>
     
 </body>
