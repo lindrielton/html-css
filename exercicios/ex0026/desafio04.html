@@ -19,28 +19,32 @@
         thead{
             background-color:lightblue ;
         }
+        
+    
         .cor{
-            background-color: lightblue;
-            text-align: left;
+            background-color:lightblue ;
         }
-        thead tr th.centro{
-            
-        }
+        
     </style>
 </head>
 <body>
     <table>
         <thead>
             <tr>
-                <th>Area</th>
-                <th>Disciplinas</th>
-                <th colspan="2" class="centro">Notas
-                 nota1
-                 nota2
-                <th>média</th>
+                <th rowspan="2">Area</th>
+                <th rowspan="2">Disciplinas</th>
+                <th class="centro" colspan="2">Notas
+                <th rowspan="1">média</th>
             </tr>
         </thead>
         <tbody>
+            <tr class="cor">
+                <td></td>
+                <td></td>
+                <td>nota1</td>
+                <td>nota2</td>
+                <td></td>
+            </tr>
             <tr>
                 <th rowspan="4">Exatas</th>
                 <td>Matemática</td>
@@ -71,7 +75,7 @@
             
             </tr>
             <tr>
-                <th colspan="4" class="cor">media de exatas</th>
+                <th colspan="4" class="media">media de exatas</th>
                 <td>?</td>
             </tr>
             <tr>
@@ -90,7 +94,7 @@
                 
             </tr>
             <tr>
-                <th colspan="4" class="cor">Media de Humanas</th>
+                <th colspan="4" class="media">Media de Humanas</th>
                 <td>?</td>
             </tr>
             
