@@ -4,29 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tabelas responsivas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            background-color: lightsteelblue;
+        }
+        th , td{
+            border: 1px solid black;
+            padding: 5px;
+        }
+        caption{
+            font-size:1.6em;
+            text-align: center;
+            padding: 10px;
+        }
+        tr:nth-child(even){
+
+            background-color:dimgray;
+        }
+        div#contain{
+            overflow-x: auto;
+        }
+
+    </style>
 </head>
 <body>
     <h1>tabelas em  telas pequenas</h1>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias obcaecati tempore repudiandae unde fugit, tempora iusto amet soluta exercitationem, quis inventore similique, nesciunt hic necessitatibus accusantium cumque earum reiciendis officia!</p>
-    <table>
-        <caption>tabelas responsivas</caption>
-        <tr>
-            <th>produto</th>
-            <th>janeiro</th>
-            <th>fevereiro</th>
-            <th>março</th>
-            <th>abril</th>
-            <th>maio</th>
-            <th>junho</th>
-            <th>julho</th>
-            <th>agosto</th>
-            <th>setembro</th>
-            <th>outubro</th>
-            <th>novenbro</th>
-            <th>desenbro</th>
-        </tr>
-
-    </table>
+    <div id="contain">
+        <table>
+            <caption>tabelas responsivas</caption>
+            <thead>
+                <tr>
+                    <th>produto</th>
+                    <th>janeiro</th>
+                    <th>fevereiro</th>
+                    <th>março</th>
+                    <th>abril</th>
+                    <th>maio</th>
+                    <th>junho</th>
+                    <th>julho</th>
+                    <th>agosto</th>
+                    <th>setembro</th>
+                    <th>outubro</th>
+                    <th>novenbro</th>
+                    <th>desenbro</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>tv</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>15</td>
+                    <td>8</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>6</td>
+                    <td>9</td>
+                    <td>4</td>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>ventilador</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>15</td>
+                    <td>8</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>6</td>
+                    <td>9</td>
+                    <td>4</td>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>cooktop</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>15</td>
+                    <td>8</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>6</td>
+                    <td>9</td>
+                    <td>4</td>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>fogão</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>15</td>
+                    <td>8</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>6</td>
+                    <td>9</td>
+                    <td>4</td>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>sofá</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>15</td>
+                    <td>8</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>6</td>
+                    <td>9</td>
+                    <td>4</td>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>garrafa termica</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>15</td>
+                    <td>8</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>6</td>
+                    <td>9</td>
+                    <td>4</td>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>20</td>
+        
+                </tr>
+            </tbody>
+        
+        
+        </table>
+    </div>
 
     
 </body>
