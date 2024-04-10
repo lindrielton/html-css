@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        caption{
+            font-size:larger;
+            padding: 5px;
+            text-decoration: underline;
+            
+        }
+        table{
+            width: 500px;
+            text-align: center;
+            border-collapse: collapse;
+            
+        }
+        
+        td , th{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        .orang{
+            background-color: chartreuse;
+        }
+        .verde{
+            background-color: darkcyan;
+        }
+        .grup{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <h1>exercicio de tabela</h1>
+
+    
+
+    <table>
+        <colgroup>
+            <col class="orang" >
+            <col class="grup"span="2" >
+            <col class="verde" >
+        </colgroup>
+        <caption>cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profisão</th>
+        </tr>
+   
+    <tbody>
+        <tr>
+            <td>Ana maria</td>
+            <td>f</td>
+            <td>28</td>
+            <td>jornalista</td>
+        </tr>
+        <tr>
+            <td>Rayane</td>
+            <td>F</td>
+            <td>27</td>
+            <td>atendente</td>
+        </tr>
+        <tr>
+            <td>José</td>
+            <td>M</td>
+            <td>55</td>
+            <td>agricultor</td>
+        </tr>
+        <tr>
+            <td>Lindalva</td>
+            <td>F</td>
+            <td>61</td>
+            <td>comfeitera</td>
+        </tr>
+        <tr>
+            <td>Lindriele</td>
+            <td>F</td>
+            <td>29</td>
+            <td>artezan</td>
+        </tr>
+    </tbody>
+    </table>
+</body>
+</html>
