@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascpt</title>
+    <style>
+        body{
+            background-color: lightgray;
+        }
+        body a{
+            width: 220px;
+            border-radius:5px ;
+            background-color: darkslategray;
+            padding: 3px;
+            color: beige;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" onclick="clicou()"> clique em min</a>
+    <div id="saida"></div>
+
+    <script>
+        function clicou() {
+           s =  window.document.getElementById("saida")
+           s.innerHTML += '<p> você clicou..!</p>'
+        }
+    </script>
+</body>
+</html>
