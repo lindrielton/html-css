@@ -7,11 +7,22 @@
 </head>
 <body>
     <h1>texte de formulario</h1>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="post" autocomplete="on">
 
+    <p> 
+        <label for="iuso">Usuário</label>
+        <input type="text" name="uso" id="iuso" required minlength="5" maxlength="10" size="10" placeholder="seu nome" autocomplete="username">
+    </p>
 
+     <p>
+        <label for="isenha">senha</label>
+        <input type="password" name="senha" id="isenha" required minlength="5" maxlength="10" size="10" placeholder="sua senha" autocomplete="current-password">
+     </p>
 
-
+     <p>
+        <input type="submit" value="acesse">
+        <input type="reset" value="linpar">
+     </p>
 
 
         
