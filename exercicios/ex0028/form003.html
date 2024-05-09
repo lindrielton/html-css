@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario media</title>
+</head>
+<body>
+    <form action="cadastro.php" autocomplete="on">
+    <p>
+        <label for="inome">nome do aluno:</label>
+        <input type="text" name="nome" id="inome" placeholder="nome" autocomplete="username">
+    </p>
+    <p>
+        <label for="imedia">média:</label>
+        <input type="number" name="media" id="imedia" max="10" min="5" required placeholder="media" autocomplete="current-password">
+    </p>
+    <p>
+        <input type="reset" value="limpar">
+        <input type="submit" value="ir" required>
+    </p>
+
+
+
+    </form>
+</body>
+</html>
