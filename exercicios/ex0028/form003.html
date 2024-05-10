@@ -4,20 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulario media</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.404);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        form p{
+            color:black;
+        }
+        form input{
+            border-radius: 5px;
+            padding: 3px;
+            box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.07);
+
+        }
+
+        .cor:hover{
+           background-color: rgba(95, 158, 160, 0.422);
+           
+        }
+    </style>
 </head>
 <body>
+    <h1>testando formulario:</h1>
     <form action="cadastro.php" autocomplete="on">
     <p>
-        <label for="inome">nome do aluno:</label>
+        <label for="inome">NOME DO ALUNO:</label>
         <input type="text" name="nome" id="inome" placeholder="nome" autocomplete="username">
     </p>
     <p>
-        <label for="imedia">média:</label>
+        <label for="imedia">MÉDIA:</label>
         <input type="number" name="media" id="imedia" max="10" min="5" required placeholder="media" autocomplete="current-password">
     </p>
+
     <p>
-        <input type="reset" value="limpar">
-        <input type="submit" value="ir" required>
+        <label for="idata">DATA DA PROVA:</label>
+        <input type="date" name="data" id="idata">
+
+    </p>
+
+    <p>
+        <label for="imes">MÊS DA PROVA:</label>
+        <input type="month" name="mes" id="imes">
+    </p>
+
+    <p>
+        <label for="ihora">HORA DA PROVA</label>
+        <input type="time" name="hora" id="ihora">
+    </p>
+    <p>
+        <input type="reset" value="limpar" class="cor">
+        <input type="submit" value="enviar" required class="cor">
     </p>
 
 
