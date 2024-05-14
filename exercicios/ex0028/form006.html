@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        fieldset{
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <h1>exemplo de formulario</h1>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>escolha sua cor</legend>
+            <p>
+                <label for="icor">escolha sua cor</label>
+                <input type="color" name="cor" id="icor">
+            </p>
+
+            <p>
+                <label for="ifot">escolha sua foto</label>
+                <input type="file" name="foto" id="ifot">
+            </p>
+
+            <p>
+                <label for="istf">nivel de satisfação</label>
+                <input type="range" name="satisf" id="istf" value="50">
+            </p>
+
+
+
+
+
+
+
+
+            <p>
+                <input type="reset" value="linpar">
+                <input type="submit" value="enviar">
+            </p>
+        </fieldset>
+
+
+
+
+
+
+
+
+    </form>
+</body>
+</html>
