@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <h1>datalisst e optgroup</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="istado">escolha seu estado:</label>
+            <select name="stado" id="istado">
+                <option value="" selected>escolha o estado</option>
+                <optgroup label="regiao sudest">
+                    <option value="sp">são paulo</option>
+                    <option value="rj"> rio de janeiro</option>
+                    <option value="pb">parana</option>
+                </optgroup>
+
+                <optgroup label="região nordeste">
+                    <option value="PB">paraíba</option>
+                    <option value="CE">ceará</option>
+                    <option value="PE">pernanbuco</option>
+                </optgroup>
+            </select>  
+        </p>
+
+        <!--datalist-->
+        <p>
+            <label for="ilista">profição</label>
+            <input type="text" name="lista" id="ilista" list="iprof">
+            <datalist id="iprof">
+                <option >cordenador</option>
+                <option >jogador</option>
+                <option >programador</option>
+                <option >enjenheiro</option>
+            </datalist>
+        </p>
+        <!--textaria-->
+
+        <p>
+           <label for="itexto">escreva</label><br>
+           <textarea name="texto" id="itexto"></textarea>
+        </p>
+    
+        <p>
+            <input type="reset" value="limpar">
+            <input type="submit" value="enviar">
+        </p>
+    </form>
+</body>
+</html>
