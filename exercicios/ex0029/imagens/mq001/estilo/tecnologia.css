@@ -1,3 +1,33 @@
 @charset "UTF-8";
 
 /*estilo para tela*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: lightsteelblue;
+    padding: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header h1{
+    text-align: center;
+}
+
+menu li{
+    display: inline-block;
+    padding: 2px;
+}
+
+h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding:5px;
+}
+article p{
+    text-indent: 10px;
+    text-align: justify;
+}
+
