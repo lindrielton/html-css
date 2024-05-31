@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+    <fieldset>
+        <legend>cadastro</legend>
+        <p>
+            <label for="inome">nome:</label>
+            <input type="text" name="letra" id="inome" placeholder="seu nome">
+   
+        </p>
+
+        <p>
+            <label for="idade">sua idade:</label>
+            <input type="number" name="ano" id="idade" required min="10" max="50">
+        </p>
+
+
+        <p>
+            <label for="isexo">sexo:</label>
+            <input type="text" name="genero" id="sexo" size="10">
+        </p>
+
+        <p>
+            <label for="imes">data que você esta prenchendo formulario</label>
+            <input type="month" name="mes" id="imes" required >
+        </p>
+
+        <p>
+            <label for="idia">dia:</label>
+            <input type="date" name="dia" id="idia">
+        </p>
+
+        <P>
+            <label for="ihora">hora:</label>
+            <input type="time" name="hora" id="ihora">
+        </P>
+
+        <p>
+            <label for="iphone">tel:</label>
+            <input type="number" name="telefone" id="iphone" placeholder="(xx)xxxx-xxxx" pattern="^\(\d{2}\)[0-9]{4}-[0-9][4]$" autocomplete="tel">
+        </p>
+
+        <p>
+           <label for="igenero"> vc se considera branco?</label>
+           <input type="radio" name="genero" id="igenero">
+           <br>
+           <label for="igenero"> vc se considera negro?</label>
+           <input type="radio" name="genero" id="igenero">
+           <br>
+           <label for="igenero"> vc se considera pardo?</label>
+           <input type="radio" name="genero" id="igenero">
+        </p>
+
+        <p>
+            <label for="icor">sua cor preferida:</label>
+            <input type="color" name="cor" id="icor">
+        </p>
+
+        <p>
+            <label for="ifoto">coloque uma foto sua:</label>
+            <input type="file" name="foto" id="ifoto">
+        </p>
+
+        <p>
+            <label for="ifoto">nivel de satisfação</label>
+            <input type="range" name="foto" id="ifoto" max="20" min="10">
+        </p>
+
+        <p>
+            <label for="icidade">cidade</label>
+                <select name="cidade" id="icidade">
+                    <option value="selected">escolha</option>
+                    <optgroup label="cidades do nordeste"></optgroup>
+                    <option value="PB">sousa</option>
+                    <option value="PB">sao francico</option>
+                </select>
+        </P>
+
+        <p>
+            <label for="imsn">deixe uma mensagem</label>
+            <textarea name="msn" id="imsn"></textarea>
+        </p>
+
+        <p>
+
+        </p>
+           
+
+
+
+
+
+
+
+
+
+
+        <p>
+             <input type="reset" value="linpar">
+             <input type="submit" value="enviar">
+        </p>
+
+
+
+
+
+
+
+
+
+
+
+
+    </fieldset>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+</body>
+</html>
