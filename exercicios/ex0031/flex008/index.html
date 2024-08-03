@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aprendendo flex-box</title>
+
+    <style>
+        div.container{
+            background-color: lightsteelblue;
+            
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            height: 400px;
+           
+            
+        }
+
+        div.item{
+            background-color: lightseagreen;
+            border: 1px solid black;
+            text-align: center;
+            padding: 20px;
+            
+        }
+
+        div#a1{
+            align-self: flex-start;
+        }
+
+        div#f1{
+            align-self: flex-end;
+        }
+
+        div#c1{
+            align-self: stretch;
+        }
+
+        div#i1{
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="a1">a</div>
+        <div class="item">b</div>
+        <div class="item" id="c1">c</div>
+        <div class="item">d</div>
+        <div class="item">e</div>
+        <div class="item" id="f1">f</div>
+        <div class="item">g</div>
+        <div class="item">h</div>
+        <div class="item" id="i1">i</div>
+       
+    </div>
+</body>
+</html>
