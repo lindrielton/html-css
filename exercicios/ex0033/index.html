@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>propiedades  de coluna</title>
+    <style>
+        *{
+            margin: 0px;
+            border: 0px;
+        }
+
+        body{
+            background-color: lightslategrey;
+        }
+        main{
+            display: flex;
+            flex-flow: row wrap;
+           
+                 
+        }
+
+        div{
+            padding: 5px;
+            margin: 10px;
+            height: 40px;
+            width: 110px;
+            background-color: rgba(0, 0, 0, 0.513);
+            color: white;
+
+            border-radius: 5px;
+
+        }
+        @media screen and (min-width: 300px) and (max-width:400px ) {
+            
+            main{
+                flex-flow: column wrap;
+                align-content: space-between;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div><p id="a1">cursos</p></div>
+        <div>quem somos</div>
+        <div><p>contatos</p></div>
+        <div><p>assine-nosso-plano</p></div>
+        <div><p>alugase</p></div>
+        <div><p>não ha vagas</p></div>
+    </main>
+    <script src="quebrando.js"></script>
+</body>
+</html>
