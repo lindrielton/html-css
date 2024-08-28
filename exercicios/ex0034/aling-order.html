@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>treinando</title>
+    <style>
+        main.conteiner{
+           height: 200px;
+           max-width: 190px;
+           border: 1px solid orange;
+           display: flex;
+           flex-flow:row wrap;
+           align-items:center ;
+           align-content: space-around ;
+           justify-content: space-between ;
+          
+        }
+           
+ 
+        div{
+            border:  1px solid black;
+            
+        }
+
+        div#um{
+            order: 5;
+            color: aqua;
+        }
+
+        div#dois{
+            order: -1;
+            color: brown;
+        }
+
+        div#tres{
+            order: -2;
+            color: chocolate;
+        }
+
+        div#quatro{
+            order: -3;
+            color: darkgreen;
+        }
+
+        div#cinco{
+            order: 4;
+            color: blue;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>treinando as direçoes do flex-box</h1>
+
+
+    <main class="conteiner">
+        <div id="um">item1</div>
+        <div id="dois">item2</div>
+        <div id="tres">item3</div>
+        <div id="quatro">item4</div>
+        <div id="cinco">item5</div>
+       
+        
+        
+        
+    </main>
+</body>
+</html>
