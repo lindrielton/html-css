@@ -39,10 +39,10 @@ a{
 
 
 #apresentacao{
-    border: solid 10px #ff0000;
     display: flex;
     flex-flow:column nowrap;
     height: 100vh;
+    justify-content: space-between;
    
 }
 
@@ -78,4 +78,47 @@ div, #menu{
 .assine:hover{
     background-color: #a703ffb0;
     transition: 1.0s;
+}
+
+#chamada{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    color: white;
+}
+
+
+
+#promocional > img{
+    max-width: 100%;
+    
+    
+    
+}
+
+#acao{
+    display: flex;
+    flex-flow: column nowrap ;
+    padding-bottom: 40px;
+    width: 320px;
+    
+    
+
+}
+
+#acao > a{
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    width: 220px;
+    align-self: center;
+}
+
+#acao > p{
+    font-size: 0.9em;
+    text-align: center;
+    padding-top: 5px;
+    
+
 }
