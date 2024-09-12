@@ -99,8 +99,10 @@ div, #menu{
 #acao{
     display: flex;
     flex-flow: column nowrap ;
+    padding-top: 10px;
     padding-bottom: 40px;
     width: 320px;
+    font-size: 0.9em;
     
     
 
@@ -121,4 +123,12 @@ div, #menu{
     padding-top: 5px;
     
 
+}
+
+#apresentacao > video{
+    z-index: -1000;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
 }
