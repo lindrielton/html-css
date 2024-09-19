@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+.conteiner{
+    height: 50vh;
+    display: grid;
+    grid-template-columns: auto auto  auto  auto ;
+   
+}
+
+
+.cx-15{
+    grid-column:1/5;
+    grid-row: 1/2;
+}
+
