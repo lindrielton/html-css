@@ -10,13 +10,15 @@
 html{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    color:var(--dark)
+    color:var(--dark);
+   
 }
 
 body{
     background-color:#ccc ;
     margin: 30px 50px;
     line-height:1.4 ;
+    
     
 }
 
@@ -68,5 +70,63 @@ img{
 .main-nav a:hover{
     background-color: var(--dark);
     color: var(--ligth);
+    transition: 1.1s;
+}
+
+/*top-conteiner*/
+
+.top-conteiner{
+    display: grid;
+    grid-gap: 20px;
+    padding-top: 30px;
+    grid-template-areas: 
+            'showcase showcase top box top-box-a'
+           'showcase showcase top box top-box-b';
+}
+
+.showcase{
+    grid-area: showcase;
+    min-height: 400px;
+    background-image: url(../img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 3rem;
+    display: flex;
+    flex-direction: start;
+    justify-content:center;
+    box-shadow: var(--shadow);
+}
+
+.showcase h1{
+    font-size: 16px;
+    margin-top: 0px;
+    color: var(--ligth);
+}
+
+.showcase p{
+    font-size: 1.3rem;
+    margin-top: 0px;
+    color: var(--ligth);
+}
+
+.top-box{
+    background-color: var(--primary);
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    box-shadow: var(--shadow);
+    padding: 1.5rem;
+}
+
+.top-box .prince{
+    font-size: 2.1rem;
+}
+
+.top-box-a{
+    grid-area: top-box-a;
+}
+
+.top-box-b{
+    grid-area: top-box-b;
 }
 
