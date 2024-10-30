@@ -61,9 +61,7 @@ img{
     font-size: 0.7em;
     box-shadow: var(--shadow);
     padding: 5px;
-    border-radius: 5px
-    
-    ;
+    border-radius: 5px ;
     
 }
 
@@ -77,11 +75,11 @@ img{
 
 .top-conteiner{
     display: grid;
-    grid-gap: 20px;
+    grid-gap:8px ;
     padding-top: 30px;
     grid-template-areas: 
-            'showcase showcase top box top-box-a'
-           'showcase showcase top box top-box-b';
+            'showcase showcase  top-box-a'
+            'showcase showcase  top-box-b';
 }
 
 .showcase{
@@ -92,7 +90,8 @@ img{
     background-size: cover;
     padding: 3rem;
     display: flex;
-    flex-direction: start;
+    flex-direction: column;
+    align-items: start;
     justify-content:center;
     box-shadow: var(--shadow);
 }
@@ -115,7 +114,7 @@ img{
     align-items: center;
     justify-items: center;
     box-shadow: var(--shadow);
-    padding: 1.5rem;
+    padding: 2px;
 }
 
 .top-box .prince{
@@ -128,5 +127,24 @@ img{
 
 .top-box-b{
     grid-area: top-box-b;
+}
+
+/*box*/
+
+.boxes{
+    display: grid;
+    padding-top: 20px;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+   
+}
+
+
+
+.box{
+    background-color: var(--primary);
+    text-align: center;
+    padding: 1.5rem 3px;
+    box-shadow: var(--shadow);
 }
 
