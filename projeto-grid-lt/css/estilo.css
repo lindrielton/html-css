@@ -160,3 +160,19 @@ img{
     margin-top: 15px;
 }
 
+/*portifolio*/
+
+.portifolio{
+    display: grid;
+    padding-top: 10px;
+    grid-gap: 10px;
+    grid-template-columns: repeat(7, 1fr);
+    
+    
+}
+
+.portifolio img{
+    
+    box-shadow: var(--shadow);
+}
+
