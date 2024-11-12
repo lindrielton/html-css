@@ -176,3 +176,55 @@ img{
     box-shadow: var(--shadow);
 }
 
+/*rodapé*/
+
+footer{
+    text-align: center;
+    color: var(--primary);
+    background-color: rgba(0, 0, 0, 0.746);
+    margin-top: 2px;
+    padding: 1px;
+}
+
+/*media*/
+
+@media (max-width:700px) {
+    .top-conteiner{
+        grid-template-areas: 'showcase showcase  top-box-a'
+            'showcase showcase  top-box-b';
+    } 
+    .showcase h1{
+        font: size 2.5rem;;
+    } 
+    
+    .main-nav ul{
+        grid-template-columns: 1fr;
+    }
+
+    .info{
+        grid-template-columns: 1fr;
+    }
+
+    .info .btn{
+        display: block;
+        text-align: center;
+        margin:auto;
+    }
+
+    .boxes{
+        grid-template-columns: 2 1fr;
+    }
+}
+
+@media (max-width:500px){
+    .top-conteiner{
+        grid-template-areas: 'showcase' 
+        'top-box-a'
+        'top-box-b';
+    }
+
+    .boxes{
+        grid-template-columns:1fr ;
+    }
+}
+
